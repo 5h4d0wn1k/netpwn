@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "netpwn"
+version = "1.0.0"
+description = "L2/L3 MITM & network attack suite — dry-run default, lab-gated"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{name = "5h4d0wn1k"}]
+keywords = ["security", "pentesting", "arp", "dhcp", "dns", "mitm", "vlan"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = []
+
+[project.optional-dependencies]
+scapy = ["scapy>=2.5"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+netpwn = "netpwn.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["netpwn*"]
+
+[tool.setuptools.package-data]
+netpwn = ["fixtures/*.bin", "fixtures/*.pcap"]
