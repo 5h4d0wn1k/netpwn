@@ -2,6 +2,7 @@ __pycache__/
 *.pyc
 reports/
 captures/
+pcap/
 *.pcap
 *.pcapng
 builds/
