@@ -1,4 +1,5 @@
 # netpwn
+![tests](https://github.com/5h4d0wn1k/netpwn/actions/workflows/ci.yml/badge.svg) ![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 L2/L3 MITM & network attack suite — ARP/DHCP/DNS/VLAN/spoof/port-knock/pcap, dry-run default, restore-on-exit.
 
@@ -152,3 +153,6 @@ python3 -m unittest discover -s tests
 
 Python 3.9+ stdlib only. `scapy` is an optional extra (`pip install netpwn[scapy]`)
 and is never required for correctness.
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md).
